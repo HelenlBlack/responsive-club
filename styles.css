@@ -73,9 +73,21 @@ body {
     width: 100%;
 }
 
+.intro .banner .content {
+    display: block;
+    text-align: center;
+}
+
 .intro .banner h2 {
     display: flex;
     font-weight: bold;
+    margin: 1px;
+}
+
+.intro .banner .content p {
+    font-size: 8px;
+    font-weight: lighter;
+    margin: 0;
 }
 
 .summary {
