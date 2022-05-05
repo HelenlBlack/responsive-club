@@ -117,12 +117,6 @@ body {
     width: 100%;
 }
 
-/* @media only screen and (max-width: 650px){
-    .photos .img-container .img {
-        max-width: 50%;
-    }
-} */
-
 @media only screen and (max-width: 1090px){
 
     .photos {
@@ -175,11 +169,14 @@ body {
     display: flex;
     align-content: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .meetup .music-library .img-container {
-    justify-items: center;
+    display: flex;
+    justify-content: space-around;
     padding: 5px;
+    width: 100%;
 }
 
 .meetup .music-library .img-container img {
