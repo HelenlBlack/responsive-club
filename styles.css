@@ -11,6 +11,14 @@ body {
 .bar {
     display: flex;
     background-color:goldenrod;
+    width: 100%;
+}
+
+.bar .content {
+    display:flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .logo-container {
@@ -24,8 +32,15 @@ body {
 }
 
 .bar ul li {
+    display: flex;
     padding: 0 2rem;
     font-weight: bold;
+}
+
+.bar ul li a {
+    font-size: 24px;
+    text-decoration: none;
+    color:black;
 }
 
 @media only screen and (min-width: 651px) {
