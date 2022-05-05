@@ -1,0 +1,271 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.bar {
+    display: flex;
+    background-color:goldenrod;
+}
+
+.logo-container {
+    margin-left: 4rem;
+}
+
+.bar ul {
+    display: flex;
+    padding: 0 2rem;
+    list-style: none;
+}
+
+.bar ul li {
+    padding: 0 2rem;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 651px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .bar {
+        justify-content: space-between;
+    }
+    .bar .content  {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-items: flex-end;
+        margin-right: 3rem;
+    }
+}
+
+.intro {
+    display: flex;
+    background-image: url("https://th.bing.com/th/id/R.1803822629647227a9b2d9b65bd69759?rik=ycwPWZYo7p%2fkzA&riu=http%3a%2f%2fwww.artsjournal.com%2fcurves%2fwp-content%2fuploads%2f2018%2f02%2fnew_top.jpg&ehk=OAC0OaS7k4qeu4MVRc%2bJqtw6gkotoRAWbZ3iD7qKb0U%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+}
+
+@media only screen and (max-width:650px) {
+    .intro {
+        background-position: -450px;
+    }
+}
+
+.intro .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    margin: 28rem auto;
+    background-color: goldenrod;
+    width: 100%;
+}
+
+.intro .banner .content {
+    display: block;
+    text-align: center;
+}
+
+.intro .banner h2 {
+    display: flex;
+    font-weight: bold;
+    margin: 1px;
+}
+
+.intro .banner .content p {
+    font-size: 8px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.summary {
+    display: flex;
+    background-color: goldenrod;
+    width: 100%;
+}
+
+.summary .content {
+    display: block;
+    padding: 0  5rem;
+}
+
+.photos {
+    display: flex;
+    background-color: darkslategray;
+    padding: 3rem 1rem;
+    align-content: center;
+    justify-content: center;
+    max-height: 16rem;
+}
+
+.photos .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1090px){
+
+    .photos {
+        max-height: 30rem;
+    }
+
+    .photos .img-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .photos {
+        max-height: 50rem;
+    }
+
+    .photos .img-container {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+.photos img {
+    display: block;
+    padding: 0.5rem;
+}
+
+.testimonial {
+    display: flex;
+    background-color: goldenrod;
+}
+
+.testimonial .content {
+    display: block;
+    padding: 0 5rem;
+    color: darkslategray;
+}
+
+.meetup {
+    display: flex;
+    background-image: url(https://edge.churchdesk.com/non/galleryview/public/o/2192/download.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.meetup .music-library {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.meetup .music-library .img-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    width: 100%;
+}
+
+.meetup .music-library .img-container img {
+    align-self: center; /*stops the images from being stretched vertically! */
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width: 740px) {
+    .meetup {
+        height: auto;
+    }
+    .meetup .music-library .img-container {
+        flex-wrap: wrap;
+    }
+}
+
+.meet-banner {
+    display: flex;
+    background-color: goldenrod;
+    width: 100%;
+}
+
+.meet-banner .content {
+    display: block;
+    padding: 1rem 5em;
+    color: darkslategray;
+}
+
+.technical {
+    display: flex;
+    background-image: url("https://th.bing.com/th/id/R.05a0d3ebd8a9ac4e1c43f9d86992819b?rik=KQuiJVFgMHf%2b4A&pid=ImgRaw&r=0");
+}
+
+.technical .tech-container {
+    width: 100%;
+}
+
+.technical .tech-container .content {
+    background-color: darkslategray;
+    color: goldenrod;
+    padding: 1rem 5rem;
+}
+
+.technical .tech-container .content a {
+    color: goldenrod;
+}
+
+.technical .repairs {
+    width: 100%;
+}
+
+.technical .repairs .img-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.technical .img-container img {
+    align-self: center;
+    border: 8px solid darkslategray; /* to do: space between image and border */
+}
+
+#mouthpiece-remover, #valve-stringing {
+    background-color: darkslategray;
+}
+
+@media only screen and (max-width: 785px) {
+    .technical {
+        height: auto;
+    }
+
+    .technical .repairs .img-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .technical .repairs .img-container .img {
+        padding: 0.5rem 0;
+    }
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+.copyright p {
+    padding: 0 0.5em;
+    font-size: small;
+}
